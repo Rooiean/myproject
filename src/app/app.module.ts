@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { ApplicationComponent } from './components/application';
+import { HeaderComponent } from './components/contrib/header';
 import { MainComponent } from './components/container/main';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MainComponent } from './components/container/main';
   ],
   declarations: [
     ApplicationComponent,
+    HeaderComponent,
     MainComponent
   ],
   providers: [],
