@@ -9,12 +9,16 @@ import { ApplicationComponent } from './components/application';
 import { HeaderComponent } from './components/contrib/header';
 import { MainComponent } from './components/container/main';
 
+
+import {NgxPageScrollModule} from 'ngx-page-scroll';
+
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    NgxPageScrollModule
   ],
   declarations: [
     ApplicationComponent,

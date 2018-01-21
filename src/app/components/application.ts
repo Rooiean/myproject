@@ -9,10 +9,4 @@ declare var $:any;
 })
 export class ApplicationComponent {
   constructor(private router: Router) {}
-
-
-  ngOnInit() {
-		$('.minHeight').css('min-height' , $(window).height() - 282);
-  }
-
 }
