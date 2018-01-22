@@ -8,9 +8,11 @@ import { NgModule } from '@angular/core';
 import { ApplicationComponent } from './components/application';
 import { HeaderComponent } from './components/contrib/header';
 import { MainComponent } from './components/container/main';
+import { NoticeComponent } from './components/container/notice';
 
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
 
-import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 @NgModule({
   imports: [
@@ -18,12 +20,14 @@ import {NgxPageScrollModule} from 'ngx-page-scroll';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    Ng4TwitterTimelineModule
   ],
   declarations: [
     ApplicationComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    NoticeComponent
   ],
   providers: [],
   bootstrap: [ApplicationComponent]
