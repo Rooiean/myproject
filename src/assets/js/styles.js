@@ -22,7 +22,7 @@ $(document).ready(function() {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 500, function() {
+        }, 500, 'easeOutCubic', function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -35,11 +35,12 @@ $(document).ready(function() {
           };
         });
       }
-    }
+    };
   });
 
-  window.addEventListener("optimizedResize", function() {
-    $('.full-box').css('min-height' , $(window).height());
-  });
-  
+});
+
+$( window ).resize(function() {
+  $('.full-box').css('min-height' , $(window).height());
+  $('.container').css('min-height' , $(window).height());
 });

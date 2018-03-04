@@ -14,57 +14,142 @@
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
   <script src="assets/js/styles.js"></script>
   
 
 </head>
 <body>
   <div class="header">
-    <h1 class="logo"><a href="#top">Top</a></h1>
     <nav>
       <ul>
-        <li><a href="#notice">NOTICE</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#circle">CIRCLE</a></li>
-        <li><a href="#event">EVENT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#notice">Notice</a></li>
+        <li><a href="#circle">Circle</a></li>
+        <!--li><a href="#event">Event</a></li-->
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
   <div class="full-box top" id="top">
+    <h1 class="logo">Top</h1>
     <div class="container">
       <div class="inside-box">
-        <div class="title-img"><img src="assets/images/title.png" /></div>
+        <div class="title-img">
+          <img src="./assets/images/title.png" />
+        </div>
       </div>
     </div>
   </div>
-  <div class="full-box" id="notice">
+  
+  <div class="full-box" id="information">
+    <h1 class="logo">Information</h1>
     <div class="container">
-      <h2>Notice</h2>
+      <div class="inside-box">
+        <h3>
+          행사 안내
+        </h3>
+        <p>
+          토가시 요시히로의 작품 Hunter X Hunter를 주제로 한 비공식 동인 행사입니다.<br />
+        </p>
+        <div>
+          <ul>
+            <li>일시 : 2018. 9. 1</li>
+            <li>장소 : 추후 공개, 서울 중부권 내</li>
+            <li>트위터 계정: <a href="http://www.twitter.com/hunter_only_kr" target="_blank">@hunter_only_kr</a></li>
+            <li>주최 : 루이</li>
+          </ul>
+        </div>
+        <div>
+          <h3>참관객 주의 사항</h3>
+          <ul>
+            <li>2018년 기준 16세(03년생) 부터 입장 가능하며, 빠른 년생은 입장이 불가합니다.</li>
+            <li>
+              입장 시 신분증 검사를 필수로 합니다. 당일 신분증을 반드시 지참하여 주시기 바랍니다.<br />
+              *주민등록증, 운전면허증, 학생증, 여권 등 <strong>생년월일과 사진이 함께 있는 신분증</strong>만 입장 가능합니다.
+            </li>
+            <li>가족동반, 반려동물 동반 참관은 입장이 제한됩니다.</li>
+            <li>행사장 내 코스프레를 허용하지 않습니다.</li>
+            <li>부스 참가자의 허락없는 부스 촬영이나 녹화는 허용하지 않습니다.</li>
+            <li>미성년자와 성인의 티켓 표기가 다를 예정입니다.</li>
+            <li>18년 기준 00년생 이상이어야만 수위본 구입이 가능합니다</li>
+            <li>입장시 팜플렛은 의무 구입이며 전프레가 소진 될 시 입장료가 인하됩니다.(입장료는 추후 책정, 공지하겠습니다)</li>
+            <li>고성방가, 쓰레기 무단투기, 음식(냄새가 강한 식사류)반입, 화기 사용이 금지되며, 금지사항을 어길경우 환불없이 퇴장조치 될 수 있습니다.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>부스 참가자 주의사항</h3>
+          <ul>
+            <li>본 행사는 신간 필수는 아니며, 굿즈 온리의 부스도 참가 가능합니다.</li>
+            <li>신간 보증금을 받지 않습니다.</li>
+            <li>수위본 샘플은 성인 티켓을 가진 분들만 확인 가능하도록 부탁드립니다.</li>
+            <li>미성년자의 수위본 대리구매를 방지하기 위하여, 수위본의 경우 한 사람당 1권씩만 판매를 부탁드립니다.</li>
+            <li>수위본 판매시 신분증을 재 확인 부탁드립니다.(18년 기준 00년생 이상이어야만 수위본 구입이 가능합니다)</li>
+            <li>부스의 디스플레이는 주변 부스를 침해하지 않는 정도에서 부탁드립니다.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <div class="full-box" id="about">
+
+  <div class="full-box" id="notice">
+    <h1 class="logo">Notice</h1>
     <div class="container">
-      <h2>About</h2>
+      <div class="inside-box">
+        <div class="box-half">
+          <h3>2018. 3. 17 :  1차 부스참가 모집 시작</h3>
+          <div>
+            <ul>
+              <li>부스참가 모집은 1차, 2차로 분리되어 진행됩니다.</li>
+              <li>1차는 반부스, 한부스 갯수제한없이 2sp기준 30부스를 채울때까지 진행됩니다.</li>
+              <li>30부스가 채워지지 않더라도 1주일 후에 종료되며, 나머지는 2차로 넘어갑니다.</li>
+              <li>2차 부스참가 모집은 한달 뒤(4월 14일부터) 진행되며 2sp기준 40부스를 채울때까지 진행됩니다.</li>
+              <li>부스참가신청 폼에 관련된 자세한 사항은 Circle 메뉴에서 확인 해 주십시오.</li>
+            </ul>
+          </div>
+          <h4>공지사항은 본 행사의 트위터에도 게시됩니다.</h4>
+        </div>
+        <div class="box-half">
+          <a class="twitter-timeline" href="https://twitter.com/hunter_only_kr?ref_src=twsrc%5Etfw">Tweets by hunter_only_kr</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="cb"></div>
+      </div>
     </div>
   </div>
   
   <div class="full-box" id="circle">
+    <h1 class="logo">Circle</h1>
     <div class="container">
-      <h2>Circle</h2>
+      <div class="inside-box">
+        <h3>부스 신청에 관하여.</h3>
+        <ul>
+          <li>2018년 기준 03년생 (만 16세 이상)부터 부스를 신청하실 수 있습니다.</li>
+          <li>한부스(2sp)에는 2명의 무료입장과 2명의 유료입장, 반부스(1sp)에는 1명의 무료입장과 1명의 유료입장이 포함됩니다.</li>
+          <li>
+            Hunter X Hunter와 관련된 2차 창작물은 책, 굿즈 관계없이 판매 가능합니다만,<br />
+            원작이나 타인의 작품을 카피한 경우 판매가 금지 될 수 있습니다.
+          </li>
+          <li>미성년자가 참가한 부스에서 수위본을 판매할 수 없습니다.</li>
+          <li>수위본에는 반드시 '19세미만 관람불가'를 표기하여 주십시오.</li>
+        </ul>
+      </div>
     </div>
   </div>
   
-  <div class="full-box" id="event">
+  <!--div class="full-box" id="event">
+    <h1 class="logo">Event</h1>
     <div class="container">
-      <h2>Event</h2>
+      
     </div>
-  </div>
+  </div-->
   
   <div class="full-box" id="contact">
+    <h1 class="logo">Contact</h1>
     <div class="container">
-      <h2>Contact</h2>
     </div>
   </div>
   
