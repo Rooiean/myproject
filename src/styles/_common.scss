@@ -24,29 +24,55 @@ body {
       text-align: right;
       li {
         display: inline-block;
-        line-height: 70px;
         font-size: 1.5em;
-        padding-right:1%;
         list-style-type: none;
-
-        &:last-child {
-          margin-right: 0;
-          padding-right: 0%;
-        }
-
         a {
+          padding: 2em .7em;
           text-decoration: none;
           display: block;
+        }
+
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
         }
       }
     }
   }
 
   @include respond-to(md) {
-    display: none;
+    opacity: 0;
+    @include transition(opacity, .5s);
 
     &.show {
-      display: block;
+      opacity: 1;
+      @include transition(opacity, .5s);
+
+      ul {
+        position: fixed;
+        top: 8%;
+        right: 0;
+        li {
+          display: block;
+          padding-right: 0;
+
+          a {
+            background: #000;
+            text-decoration: none;
+            display: inline-block;
+            padding: 1em 1em 1em 2em;
+            font-size: 1.5em;
+            line-height: 1;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-right: 1em;
+          }
+        }
+      }
     }
   }
 }
@@ -63,6 +89,23 @@ body {
     z-index: 2;
     left: 5%;
     padding: 2.1% 0;
+  }
+}
+
+.menu-btn {
+  display: none;
+  top: 2%;
+  right: 5%;
+  width: 5%;
+  position: fixed;
+  z-index: 100;
+
+  img {
+    width: 100%;
+  }
+
+  @include respond-to(md) {
+    display: block;
   }
 }
 
@@ -231,12 +274,15 @@ hr {
 }
 
 #information {
-  background: #673ab7;
+  //background: #673ab7;
 }
 
 #notice {
+  background: #5d4157;
+  background: -webkit-linear-gradient(to bottom, #5d4157, #a8caba);
+  background: linear-gradient(to bottom, #5d4157, #a8caba);
   .sm-box {
-    @include respond-to(sm) {
+    @include respond-to(md) {
       margin-top:20px;
     }
   }
@@ -247,5 +293,7 @@ hr {
 }
 
 #contact {
-  background: #322e77;
+  background: #FC5C7D;
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
 }

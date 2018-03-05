@@ -35,10 +35,13 @@ $(document).ready(function() {
           };
         });
       }
-    };
+    }
   });
 
-});
+  $('.menu-btn').click(function() {
+    $('.header').toggleClass('show');
+  });
+});   
 
 $( window ).resize(function() {
   $('.full-box').css('min-height' , $(window).height());
