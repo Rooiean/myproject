@@ -41,6 +41,14 @@ body {
       }
     }
   }
+
+  @include respond-to(md) {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
 }
 
 .full-box {
@@ -53,9 +61,8 @@ body {
   .logo {
     position: absolute;
     z-index: 2;
-    height: 70px;
     left: 5%;
-    line-height: 70px;
+    padding: 2.1% 0;
   }
 }
 
@@ -63,9 +70,13 @@ body {
   width: 100%;
   display: block;
   margin: 0 auto;
-  padding: 5%;
+  padding: 7% 5%;
   position: relative;
   z-index: 1;
+
+  @include respond-to(sm) {
+    padding: 14% 6% 5% 5%;
+  }
 }
 
 .inside-box {
@@ -75,11 +86,12 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 2%;
-  
-  > div {
-    margin-bottom: 20px;
-  }
 
+  @include respond-to(sm) {
+    border:3px solid #fff;
+    padding: 5%;
+  }
+  
   ul {
     padding-left: 20px;
     list-style-type: disc;
@@ -93,6 +105,11 @@ body {
 
   h3 {
     margin-bottom: 10px;
+
+    @include respond-to(sm) {
+      text-align: center;
+    }
+    
   }
 }
 
@@ -145,6 +162,20 @@ p {
   clear: both;
 }
 
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+hr {
+  border:0;
+  border-bottom: 1px solid #fff;
+  margin: 20px 0;
+}
+
 .top {
   background-image: url('../images/title_background.gif');
   background-position: center center;
@@ -171,11 +202,50 @@ p {
   }
 }
 
-.box-half {
+.lg-box {
+  width: 65%;
+  display: block;
+  margin-bottom: 0;
+
+  @include respond-to(md) {
+    width:100%;
+  }
+}
+
+.md-box {
   width: 49.5%;
   display: block;
-  float: left;
-  &:first-child {
-    margin-right: 1%;
+  margin-bottom: 0;
+  @include respond-to(md) {
+    width:100%;
   }
+}
+
+.sm-box {
+  width: 33.3%;
+  display: block;
+  margin-bottom: 0;
+  @include respond-to(md) {
+    width:100%;
+  }
+}
+
+#information {
+  background: #673ab7;
+}
+
+#notice {
+  .sm-box {
+    @include respond-to(sm) {
+      margin-top:20px;
+    }
+  }
+}
+
+#circle {
+  background: #545363;
+}
+
+#contact {
+  background: #322e77;
 }
