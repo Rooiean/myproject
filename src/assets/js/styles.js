@@ -38,9 +38,11 @@ $(document).ready(function() {
     }
   });
 
-  $('.menu-btn').click(function() {
-    $('.header').toggleClass('show');
-  });
+  
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+    $('.header-sm').toggleClass('show');
+	});
 });   
 
 $( window ).resize(function() {
